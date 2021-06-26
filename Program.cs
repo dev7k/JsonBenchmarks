@@ -1,4 +1,4 @@
-﻿using System;
+﻿using BenchmarkDotNet.Running;
 
 namespace JsonBenchmarks
 {
@@ -6,7 +6,7 @@ namespace JsonBenchmarks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BenchmarkRunner.Run<JsonBenchmarks>();
         }
     }
 }
